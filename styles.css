@@ -4,8 +4,10 @@
     margin: 0;
 }
 :root{
-    --padding-left: 15px;
-    --input-padding: 5px;
+    --padding: 25px;
+    --input-padding: 7px;
+    --width: 700px;
+    --margin:30px;
 }
 body{
     display: flex;
@@ -23,18 +25,27 @@ main{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background-color: rgb(250, 227, 167);
+    background-color: rgb(255, 216, 115);
 }
 
 form{
     border: solid black;
-    background-color: rgb(255, 216, 115);
+    background-color: rgb(250, 227, 167);
+    margin: var(--margin) 0;
+    padding: var(--padding) 0;
 }
+
 form input{
     background-color: transparent;
+    height: 25px;
+    width: 250px;
+    padding: var(--input-padding);
+    margin-top: var(--input-padding);
+    border-radius: 5px;
+    font-size:1em ;
 }
 .submit,.intro, form{
-    padding-left: var(--padding-left);
+    padding-left: var(--padding);
 }
 section, section .form-input{
     display: flex;
@@ -42,5 +53,17 @@ section, section .form-input{
 }
 section .form-input{
     flex-direction: column;
-    margin: 20px 30px 20px 0;
+    margin: 20px 90px 20px 0;
+    
 }
+section, .intro{
+    width: var(--width);
+}
+.intro p+p, .submit button + p {
+    margin-top: var(--padding);
+}
+form h2, .intro p{
+    font-size: 25px;
+    font-weight: 800;
+}
+
