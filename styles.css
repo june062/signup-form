@@ -20,4 +20,27 @@ main{
     border: solid black;
     width: 70vw;
     height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgb(250, 227, 167);
+}
+
+form{
+    border: solid black;
+    background-color: rgb(255, 216, 115);
+}
+form input{
+    background-color: transparent;
+}
+.submit,.intro, form{
+    padding-left: var(--padding-left);
+}
+section, section .form-input{
+    display: flex;
+    flex-wrap: wrap;
+}
+section .form-input{
+    flex-direction: column;
+    margin: 20px 30px 20px 0;
 }
