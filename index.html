@@ -53,13 +53,13 @@
 
                 <div class="form-input">
                     <label for="pw">PASSWORD</label>
-                    <input type="password" id="pw" name="password" required minlength="8" maxlength="16">
+                    <input type="password" id="pw" name="password" required minlength="8" maxlength="16" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*_=+-]).{8,16}$">
                 </div>
 
 
                 <div class="form-input">
                     <label for="pw-confirm">CONFIRM PASSWORD</label>
-                    <input type="password" id="pw-confirm" name="pw-confirm" required minlength="8" maxlength="16">
+                    <input type="password" id="pw-confirm" name="pw-confirm" required minlength="8" maxlength="16" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*_=+-]).{8,16}$">
                 </div>
 
                 <div class="submit">

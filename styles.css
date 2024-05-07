@@ -87,4 +87,8 @@ form h2, .intro p{
     border-radius: 5px ;
     background-color: rgb(51, 204, 173);
 }
+input[type="password"]:invalid::after{
+    content: "Hi";
+
+}
 
