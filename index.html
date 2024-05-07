@@ -29,37 +29,42 @@
             <section>
                 <div class="form-input">
                     <label for="first">FIRST NAME</label>
-                    <input type="text" id="first" name="first">
+                    <input type="text" id="first" name="first" required placeholder="Ex: Bob">
                 </div>
 
 
                 <div class="form-input">
                     <label for="last"> LAST NAME</label>
-                    <input type="text" id="last" name="last">
+                    <input type="text" id="last" name="last" required placeholder="Ex: Duncan">
                 </div>
 
 
                 <div class="form-input">
                     <label for="email">EMAIL</label>
-                    <input type="email" id="email" name="email">
+                    <input type="email" id="email" name="email" required placeholder="email@email.com">
                 </div>
 
 
                 <div class="form-input">
                     <label for="phone">PHONE NUMBER</label>
-                    <input type="tel" id="phone" name="phone">
+                    <input type="tel" id="phone" name="phone" required placeholder="XXX-XXX-XXXX" pattern="^[1-9]\d{2}-\d{3}-\d{4}">
                 </div>
 
 
                 <div class="form-input">
                     <label for="pw">PASSWORD</label>
-                    <input type="password" id="pw" name="password">
+                    <input type="password" id="pw" name="password" required minlength="8" maxlength="16">
                 </div>
 
 
                 <div class="form-input">
                     <label for="pw-confirm">CONFIRM PASSWORD</label>
-                    <input type="password" id="pw-confirm" name="pw-confirm">
+                    <input type="password" id="pw-confirm" name="pw-confirm" required minlength="8" maxlength="16">
+                </div>
+
+                <div class="submit">
+                    <button>Submit</button>
+
                 </div>
             </section>
 
@@ -67,8 +72,7 @@
 
         </form>
 
-        <div class="submit">
-            <button>Create Account</button>
+        <div class="login">
             <p>Already have an account? Log in</p>
         </div>
 

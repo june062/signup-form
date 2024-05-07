@@ -4,8 +4,8 @@
     margin: 0;
 }
 :root{
-    --padding: 25px;
-    --input-padding: 7px;
+    --padding: 35px;
+    --input-padding: 5px;
     --width: 700px;
     --margin:30px;
 }
@@ -20,7 +20,7 @@ body{
 }
 main{
     border: solid black;
-    width: 70vw;
+    width: 100vw;
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -40,11 +40,24 @@ form input{
     height: 25px;
     width: 250px;
     padding: var(--input-padding);
-    margin-top: var(--input-padding);
     border-radius: 5px;
-    font-size:1em ;
+    font-size:.8em ;
+    border-color:rgb(179, 175, 175);
 }
-.submit,.intro, form{
+
+form input:focus{
+    border-color: black;
+}
+form input:valid{
+    border-color: rgb(0,255,60);
+}
+
+form input:invalid{
+    border-color: rgb(255, 0, 38);
+}
+
+
+.login,.intro, form{
     padding-left: var(--padding);
 }
 section, section .form-input{
@@ -65,5 +78,13 @@ section, .intro{
 form h2, .intro p{
     font-size: 25px;
     font-weight: 800;
+}
+.submit button{
+    width:100px;
+    height: 30px;
+    margin-top: 30px;
+    font-size: large;
+    border-radius: 5px ;
+    background-color: rgb(51, 204, 173);
 }
 
