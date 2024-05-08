@@ -16,10 +16,10 @@ body{
 .logo{
     height: 100vh;
     width: 30vw;
-    border: solid black;
+    /* border: solid black; */
 }
 main{
-    border: solid black;
+    /* border: solid black; */
     width: 100vw;
     height: 100vh;
     display: flex;
@@ -29,7 +29,7 @@ main{
 }
 
 form{
-    border: solid black;
+    /* border: solid black; */
     background-color: rgb(250, 227, 167);
     margin: var(--margin) 0;
     padding: var(--padding) 0;
@@ -88,7 +88,26 @@ form h2, .intro p{
     background-color: rgb(51, 204, 173);
 }
 input[type="password"]:invalid::after{
-    content: "Hi";
+    display: block;
+    content: "Enter a password that contains at least 1 upper case letter, 1 number, and 1 special character.";
 
 }
+.logo h1{
+    font-size: 40px;
+    color: white;
+    width: auto;
+    height: 100px;
+    text-align: center;
+    background: rgba(0,0,0, .4);
+    padding: 25px 0;
+    position: relative;
+    top: 110px;
 
+    
+    
+}
+.logo{
+    background-image: url(assets/URL-TRAVEL-EGYPT-Interior-Corridor-of-Abu-Simbel.jpg);
+    background-size:100% 100%;
+    position: relative;
+}
